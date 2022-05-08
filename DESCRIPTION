@@ -7,8 +7,8 @@ Authors@R:
            role = c("aut", "cre"),
            email = "srosin@live.unc.edu",
            comment = c(ORCID = "0000-0002-8089-4133"))
-Description: Implements estimators from the manuscript ``Estimating SARS-CoV-2 Seroprevalence''
-License: `use_mit_license()`
+Description: Implements estimators from the manuscript ``Estimating SARS-CoV-2 Seroprevalence''.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
