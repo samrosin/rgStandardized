@@ -23,6 +23,7 @@
 #' @examples
 #' ests_rg(0.01, .99, .98, 30, 50, 1000, TRUE)
 #'
+#' @export
 
 ests_rg <- function(rho_hat, sigma_e_hat, sigma_p_hat, n_1, n_2, n_3, variance = TRUE){
   pi_hat <- (rho_hat + sigma_p_hat - 1) / (sigma_e_hat + sigma_p_hat - 1) ###Rogan and Gladen formula
