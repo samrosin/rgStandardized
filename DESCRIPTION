@@ -1,12 +1,15 @@
 Package: rgStandardized
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Standardized Rogan-Gladen Estimation
+Version: 0.1
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person(given = "Samuel",
+           family = "Rosin",
+           role = c("aut", "cre"),
+           email = "srosin@live.unc.edu",
+           comment = c(ORCID = "0000-0002-8089-4133"))
+Description: Implements estimators from the manuscript ``Estimating SARS-CoV-2 Seroprevalence''
+License: `use_mit_license()`
 Encoding: UTF-8
+LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
