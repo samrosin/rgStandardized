@@ -45,6 +45,8 @@ not for selection bias. Note that *σ̂*<sub>*e*</sub> and
 *σ̂*<sub>*p*</sub> are estimated sensitivity and specificity from sample
 sizes of *n*<sub>1</sub> and *n*<sub>2</sub>, and that *ρ̂* is the sample
 proportion of positives from the main survey of size *n*<sub>3</sub>.
+The study used a stratified random sample, so not much selection bias is
+expected.
 
 ``` r
 library(rgStandardized)
@@ -88,8 +90,5 @@ paste(round(srgm_ests$hat_pi_srgm, 4),
 #> [1] "0.0187 1e-04"
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/v1/examples>.
+After accounting for selection bias, the standardized seroprevalence
+estimates are higher.

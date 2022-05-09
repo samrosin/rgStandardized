@@ -38,7 +38,8 @@ https://doi.org/10.48550/arXiv.2111.02910}
 
 ## Example
 
-An example is a seroprevalence survey conducted in Belgium in 2020 to estimate the prevalence of SARS-CoV-2 IgG antibodies. We estimate seroprevalence in the first of seven collection rounds. The Rogan-Gladen estimator corrects for measurement error (misclassification bias), but not for selection bias. Note that $\hat \sigma_e$ and $\hat \sigma_p$ are estimated sensitivity and specificity from sample sizes of $n_1$ and $n_2$, and that $\hat \rho$ is the sample proportion of positives from the main survey of size $n_3$. 
+An example is a seroprevalence survey conducted in Belgium in 2020 to estimate the prevalence of SARS-CoV-2 IgG antibodies. We estimate seroprevalence in the first of seven collection rounds. The Rogan-Gladen estimator corrects for measurement error (misclassification bias), but not for selection bias. Note that $\hat \sigma_e$ and $\hat \sigma_p$ are estimated sensitivity and specificity from sample sizes of $n_1$ and $n_2$, and that $\hat \rho$ is the sample proportion of positives from the main survey of size $n_3$. The study used a stratified random sample, so not much selection bias is expected.
+
 
 ```{r rg}
 library(rgStandardized)
@@ -76,4 +77,4 @@ paste(round(srgm_ests$hat_pi_srgm, 4),
       round(srgm_ests$hat_var_pi_srgm, 4))
 ```
 
-
+After accounting for selection bias, the standardized seroprevalence estimates are higher. 
