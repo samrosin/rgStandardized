@@ -23,17 +23,16 @@ The development version of `rgStandardized` can be installed with:
 
 ``` r
 # install.packages("devtools")
-library(devtools)
-#> Loading required package: usethis
-load_all()
-#> ℹ Loading rgStandardized
-#devtools::install_github("samrosin/rgStandardized")
+devtools::install_github("samrosin/rgStandardized")
+#> Skipping install of 'rgStandardized' from a github remote, the SHA1 (24e49290) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 ```
 
 ## Citation
 
 Rosin, S., Shook-Sa, B. E., Cole, S. R., and Hudgens, M. G. Estimating
-SARS-CoV-2 Seroprevalence (2022). arXiV.
+SARS-CoV-2 Seroprevalence (2022).
+[arXiV](https://doi.org/10.48550/arXiv.2111.0291).
 
 ## Example
 
@@ -64,7 +63,7 @@ paste(round(rg_ests$hat_pi_rg, 4),
 ```
 
 Not correcting for measurement error, the seroprevalence estimate is
-0.016 with a variance estimate of 0.
+0.0159 with a variance estimate of 10^{-4}.
 
 The methods developed in the manuscript adjust for both measurement
 error and selection bias. Estimates adjusting for age category and sex
