@@ -33,7 +33,7 @@
 #'  belg_cr_srgm <- as.data.frame(belg_cr)
 #'
 #'  srgm(belg_cr_srgm, belgium$strataprops, 154/181, 322/326,
-#'       181, 326, 3000, vars_std = c("age_cat", "sex"),
+#'       181, 326, nrow(belg_cr_srgm), vars_std = c("age_cat", "sex"),
 #'       mod_formula = formula("x ~ sex + age_cat + sex*age_cat"), variance = TRUE)
 #'
 #' @export
