@@ -24,15 +24,13 @@ The development version of `rgStandardized` can be installed with:
 ``` r
 # install.packages("devtools")
 devtools::install_github("samrosin/rgStandardized")
-#> Skipping install of 'rgStandardized' from a github remote, the SHA1 (24e49290) has not changed since last install.
-#>   Use `force = TRUE` to force installation
 ```
 
 ## Citation
 
 Rosin, S., Shook-Sa, B. E., Cole, S. R., and Hudgens, M. G. Estimating
 SARS-CoV-2 Seroprevalence (2022).
-[arXiV](https://doi.org/10.48550/arXiv.2111.0291).
+[arXiV](https://arxiv.org/abs/2111.02910).
 
 ## Example
 
